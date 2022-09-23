@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --darkBlue: hsl(218, 23%, 16%);
+  --darkGrayishBlue: hsl(217, 19%, 24%);
+  --grayishBlue: hsl(217, 19%, 38%);
+  --lightCyan: hsl(193, 38%, 86%);
+  --neonGreen: hsl(150, 100%, 66%);
+}
+@mixin flex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+body {
+  background-color: var(--darkBlue);
+  min-height: 100vh;
+  @include flex();
+  justify-content: center;
+}
+.advice-container {
+  width: 25rem;
+  @include flex();
+  position: relative;
+  border-radius: 0.5rem;
+  background-color: $darkGrayishBlue;
+  padding: 1.5rem;
+}

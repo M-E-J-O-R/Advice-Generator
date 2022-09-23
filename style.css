@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(218deg, 23%, 16%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.advice-container {
+  width: 25rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  border-radius: 0.5rem;
+  background-color: hsl(217deg, 19%, 24%);
+  padding: 1.5rem;
+}
+.advice-container .advice-id {
+  color: hsl(150deg, 100%, 66%);
+}
+.advice-container .advicee-text {
+  color: hsl(193deg, 38%, 86%);
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.advice-container #divider {
+  display: block;
+  width: 100%;
+  margin: 1.5rem 0.001rem;
+}
+
+.dice {
+  border-radius: 50%;
+  position: absolute;
+  top: 100%;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 45px;
+  background-color: hsl(150deg, 100%, 66%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.dice:hover {
+  box-shadow: 0.01rem 0.01rem 1rem 0.1rem hsl(150deg, 100%, 66%);
+}
+
+.dicee {
+  display: block;
+  width: 20px;
+  height: 20px;
+}/*# sourceMappingURL=style.css.map */
